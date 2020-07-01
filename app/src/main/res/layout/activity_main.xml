@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_menu"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:padding="8dp"
+        app:itemHorizontalTranslationEnabled="true"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:background="@drawable/logostarwars"
+        android:visibility="visible"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar_menu"
+        app:layout_constraintStart_toStartOf="@id/toolbar_menu"
+        app:layout_constraintTop_toTopOf="@id/toolbar_menu" />
+
+
+    <TextView
+        android:id="@+id/text_galaxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:text="@string/theme_star_wars"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar_menu"
+        app:layout_constraintStart_toEndOf="@id/image_logo"
+        app:layout_constraintTop_toTopOf="@id/toolbar_menu" />
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/search_menu"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:foregroundTint="@color/white"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:outlineAmbientShadowColor="@color/white"-->
+<!--        android:outlineSpotShadowColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/toolbar_menu"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/toolbar_menu"-->
+<!--        app:layout_constraintTop_toTopOf="@id/toolbar_menu" />-->
+
+    <!--    <SearchView-->
+    <!--        android:id="@+id/search_menu"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="@color/white"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/toolbar_menu"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/toolbar_menu"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/toolbar_menu" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

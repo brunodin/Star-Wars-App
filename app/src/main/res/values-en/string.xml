@@ -1,0 +1,43 @@
+<resources>
+    <!--    App Name-->
+    <string name="app_name">Star Wars</string>
+    <!--    Title-->
+    <string name="title_people">Characters</string>
+    <string name="title_planet">Planets</string>
+    <string name="title_film">Movies</string>
+    <string name="title_specie">Species</string>
+    <!--    Attributes-->
+    <string name="character_search">Search for your character</string>
+    <string name="theme_star_wars">In A Galaxy Far Far Away</string>
+    <!--    PeopleModel Placeholder-->
+    <string name="m_people_name">Name: %s</string>
+    <string name="m_people_gender">Gender: %s</string>
+    <string name="m_people_height">Height: %s cm</string>
+    <string name="m_people_mass">Mass: %s kg</string>
+    <string name="m_people_eye_color">Eyes Color: %s</string>
+    <string name="m_people_birth_year">Birth Year: %s</string>
+    <string name="m_people_skin_color">Skin Color: %s</string>
+    <string name="m_people_hair_color">Hair Color: %s</string>
+    <!--    PlanetModel Placeholder-->
+    <string name="m_planet_name">Planet\'s Name: %s</string>
+    <string name="m_planet_climate">Weather: %s</string>
+    <string name="m_planet_orbital_period">Orbital Period: %s days</string>
+    <string name="m_planet_population">Population: %s</string>
+    <string name="m_planet_rotation_period">Rotation Period: %s days</string>
+    <string name="m_planet_terrain">Terrain: %s</string>
+    <!--    Specie Model Placeholder-->
+    <string name="m_specie_name">Specie\'s Name: %s</string>
+    <string name="m_specie_average_height">Average Height: %s</string>
+    <string name="m_specie_average_life_span">Average Life Span: %s years</string>
+    <string name="m_specie_language">Language: %s</string>
+    <string name="m_specie_classification">Classification: %s</string>
+    <!--    Film Model Placeholder-->
+    <string name="m_film_nome">Movie\'s Name: %s</string>
+    <string name="m_film_opening_crawl">Opening: %s</string>
+    <string name="m_film_director">Director\'s Name: %s</string>
+    <string name="m_film_release_date">Release Date: %s</string>
+    <string name="m_film_episode_id">Movie Sequence: %s</string>
+    <!--    Others-->
+    <string name="opening_crawl">Episode %d: %s</string>
+
+</resources>

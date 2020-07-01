@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.viewholder.DescriptionAll">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Toolbar
+        android:id="@+id/toolbar_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_back"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            tools:text="Title" />
+    </Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/view_stroke"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:background="@drawable/stroke2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_menu" >
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/view_first"
+        app:layout_constraintStart_toStartOf="@id/view_first"
+        app:layout_constraintTop_toTopOf="@id/view_first"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_2"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_3"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_4"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_5"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_6"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_7"
+        tools:text="Text here" />
+
+    <TextView
+        android:id="@+id/text_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:paddingBottom="16sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/view_stroke"
+        app:layout_constraintStart_toStartOf="@id/view_stroke"
+        app:layout_constraintTop_toBottomOf="@id/text_8"
+        tools:text="Text here" />
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<resources>
+    <!--    App Name-->
+    <string name="app_name">Star Wars</string>
+    <!--    Title-->
+    <string name="title_people">Personagens</string>
+    <string name="title_planet">Planetas</string>
+    <string name="title_film">Filmes</string>
+    <string name="title_specie">Especies</string>
+    <!--    Attributes-->
+    <string name="character_search">Pesquise pelo personagem.</string>
+    <string name="theme_star_wars">In A Galaxy Far Far Away</string>
+    <!--    PeopleModel Placeholder-->
+    <string name="m_people_name">Nome: %s</string>
+    <string name="m_people_gender">Genero: %s</string>
+    <string name="m_people_height">Altura: %s cm</string>
+    <string name="m_people_skin_color">Cor da Pele: %s</string>
+    <string name="m_people_mass">Peso: %s kg</string>
+    <string name="m_people_eye_color">Cor dos Olhos: %s</string>
+    <string name="m_people_birth_year">Ano de Nascimento: %s</string>
+    <string name="m_people_hair_color">Cor dos Cabelos: %s</string>
+    <!--    PlanetModel Placeholder-->
+    <string name="m_planet_name">Nome do Planeta: %s</string>
+    <string name="m_planet_climate">Clima: %s</string>
+    <string name="m_planet_orbital_period">Tempo em Orbita: %s dias</string>
+    <string name="m_planet_population">População: %s</string>
+    <string name="m_planet_rotation_period">Tempo de Rotação: %s dias</string>
+    <string name="m_planet_terrain">Terreno: %s</string>
+    <!--    Specie Model Placeholder-->
+    <string name="m_specie_name">Nome da Especie: %s</string>
+    <string name="m_specie_average_height">Altura Estimada: %s cm</string>
+    <string name="m_specie_average_life_span">Tempo de Vida Estimado: %s anos</string>
+    <string name="m_specie_language">Lingua: %s</string>
+    <string name="m_specie_classification">Classificação: %s</string>
+    <!--    Film Model Placeholder-->
+    <string name="m_film_nome">Nome do Filme: %s</string>
+    <string name="m_film_opening_crawl">Abertura: %s</string>
+    <string name="m_film_director">Nome do Diretor: %s</string>
+    <string name="m_film_release_date">Dia de Lançamento: %s</string>
+    <string name="m_film_episode_id">Sequencia do Filme: %s</string>
+    <!--    Others-->
+    <string name="opening_crawl">Episodio %d: %s</string>
+</resources>

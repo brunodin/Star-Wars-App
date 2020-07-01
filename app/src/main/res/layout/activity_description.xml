@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.viewholder.Description">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbar_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_back"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                tools:text="Title" />
+        </Toolbar>
+
+        <View
+            android:id="@+id/view_first"
+            android:layout_width="350sp"
+            android:layout_height="500dp"
+            android:layout_marginTop="35sp"
+            android:background="@drawable/rounded_edges_color1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_menu" />
+
+        <View
+            android:id="@+id/view_second"
+            android:layout_width="0sp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_edges_color2"
+            app:layout_constraintBottom_toBottomOf="@id/view_stroke"
+            app:layout_constraintEnd_toEndOf="@id/view_stroke"
+            app:layout_constraintStart_toStartOf="@id/view_stroke" />
+
+        <View
+            android:id="@+id/view_stroke"
+            android:layout_width="350sp"
+            android:layout_height="500dp"
+            android:layout_marginTop="35sp"
+            android:background="@drawable/stroke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_menu" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@id/view_first"
+            app:layout_constraintStart_toStartOf="@id/view_first"
+            app:layout_constraintTop_toTopOf="@id/view_first"
+            tools:text="Text here" />
+
+        <TextView
+            android:id="@+id/text_opening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:paddingBottom="16sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            app:layout_constraintEnd_toEndOf="@id/view_stroke"
+            app:layout_constraintStart_toStartOf="@id/view_stroke"
+            app:layout_constraintTop_toBottomOf="@id/text_name"
+            tools:text="Text here" />
+
+        <!--Segunda View -->
+
+        <ImageView
+            android:id="@+id/image_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:background="@drawable/ic_movie"
+            android:backgroundTint="#000"
+            app:layout_constraintBottom_toBottomOf="@id/view_first"
+            app:layout_constraintBottom_toTopOf="@id/image_date"
+            app:layout_constraintStart_toStartOf="@id/view_first" />
+
+
+        <TextView
+            android:id="@+id/text_directors_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/image_movie"
+            app:layout_constraintStart_toEndOf="@id/image_movie"
+            app:layout_constraintTop_toTopOf="@id/image_movie"
+            tools:text="Diretor nome" />
+
+        <ImageView
+            android:id="@+id/image_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:background="@drawable/ic_date"
+            android:backgroundTint="#000"
+            app:layout_constraintBottom_toBottomOf="@id/view_first"
+            app:layout_constraintStart_toStartOf="@id/view_first" />
+
+        <TextView
+            android:id="@+id/text_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/image_date"
+            app:layout_constraintStart_toEndOf="@id/image_date"
+            app:layout_constraintTop_toTopOf="@id/image_date"
+            tools:text="Data de Lançamento" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <!--    app:layout_constraintTop_toBottomOf="@+id/toolbar_menu"-->
